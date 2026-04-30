@@ -9,6 +9,7 @@ import Rule5 from "./JSX/Rule5";
 import FunComponent from "./Component/FunComponent";
 import Parent from "./Props/Parent";
 import Parent1 from "./Props/Parent1";
+import Admin from "./Props/Admin";
 
 const App = () => {
     return (
@@ -22,7 +23,8 @@ const App = () => {
             {/* <Rule4/> */}
             {/* <Rule5/> */}
             {/* <Parent/> */}
-            <Parent1 />
+            {/* <Parent1 /> */}
+            <Admin/>
         </>
 
     );
