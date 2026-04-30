@@ -49,6 +49,7 @@ const User = (Props) => {
                     <li>Role : {employee5.eRole}</li>
                 </ul>
             </h1>
+            <hr />
         </>
     )
 }
