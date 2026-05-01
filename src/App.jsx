@@ -11,6 +11,7 @@ import Parent from "./Props/Parent";
 import Parent1 from "./Props/Parent1";
 import Admin from "./Props/Admin";
 import UserDetails from "./Props/UserDetails";
+import ParentComponent from "./Props/ParentComponent";
 
 const App = () => {
     return (
@@ -26,8 +27,10 @@ const App = () => {
             {/* <Parent/> */}
             {/* <Parent1 /> */}
             {/* <Admin /> */}
-            <UserDetails />
+            {/* <UserDetails /> */}
+            <ParentComponent/>
         </>
+
 
     );
 }
