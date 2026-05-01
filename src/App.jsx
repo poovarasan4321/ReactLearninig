@@ -10,6 +10,7 @@ import FunComponent from "./Component/FunComponent";
 import Parent from "./Props/Parent";
 import Parent1 from "./Props/Parent1";
 import Admin from "./Props/Admin";
+import UserDetails from "./Props/UserDetails";
 
 const App = () => {
     return (
@@ -24,7 +25,8 @@ const App = () => {
             {/* <Rule5/> */}
             {/* <Parent/> */}
             {/* <Parent1 /> */}
-            <Admin/>
+            {/* <Admin /> */}
+            <UserDetails />
         </>
 
     );
