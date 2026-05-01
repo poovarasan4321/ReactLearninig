@@ -1,9 +1,12 @@
 import React from 'react'
 
 const UserDisplay = (props) => {
+    //! One line Destructing 
     let { name, role, salary, address: { city, pincode } } = props.userDetails
+    //* let {city ,pincode}= address
+
+  
     let { displayMsg } = props
-    console.log(displayMsg);
 
 
 

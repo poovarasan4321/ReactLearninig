@@ -13,6 +13,7 @@ const UserDetails = () => {
     };
 
     //! Function How To Pass  asa a Props in parent to child  
+    //* Function not call just pass as reference
 
     let displayMsg = () => {
 
