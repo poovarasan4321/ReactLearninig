@@ -8,6 +8,8 @@ const ParentComponent = () => {
             <h1>Parent Component</h1>
             <hr />
             <Childcomponent>
+
+
                 <h1>Hello Child Element</h1>
                 <p>Iam Coming From Child Opening and Closing tag</p>
                 <ul>
@@ -15,6 +17,7 @@ const ParentComponent = () => {
                     <li>CSS</li>
                     <li>JS</li>
                 </ul>
+                
             </Childcomponent>
         </div>
     )
