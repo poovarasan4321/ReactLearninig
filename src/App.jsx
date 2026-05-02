@@ -12,6 +12,7 @@ import Parent1 from "./Props/Parent1";
 import Admin from "./Props/Admin";
 import UserDetails from "./Props/UserDetails";
 import ParentComponent from "./Props/ParentComponent";
+import WithoutSate from "./state/WithoutSate";
 
 const App = () => {
     return (
@@ -28,7 +29,8 @@ const App = () => {
             {/* <Parent1 /> */}
             {/* <Admin /> */}
             {/* <UserDetails /> */}
-            <ParentComponent/>
+            {/* <ParentComponent/> */}
+            <WithoutSate/>
         </>
 
 

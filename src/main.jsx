@@ -17,4 +17,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 //! Without JSX:
 // const element = React.createElement("h1", null, "Hello world");
 
-// ReactDOM.createRoot(document.getElementById("root")).render(element);
+// ReactDOM.createRoot(document.getElementById("root")).render(element);    
