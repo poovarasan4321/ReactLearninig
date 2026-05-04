@@ -2,29 +2,20 @@ import React, { useState } from 'react'
 
 const WithoutSate = () => {
 
+    let count =0;
 
-    //! let or const [variable,setState] = useState(initial_value)
-        // count= store values
-        // setState=updateValue
-        // useState() = initial value
-
-    //* useState returns an array:
-    //* [currentState, functionToUpdateState]
-
-
-    const [count, setState] = useState(0)
 
     let incrementCount = () => {
-        setState(count + 1);
+       ++count;
     };
 
     let decrementCount = () => {
-        setState(count - 1);
+        --count;
 
     };
 
     let restCount = () => {
-        setState(0);
+       count= 0;
 
     }
 

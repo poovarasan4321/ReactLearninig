@@ -13,6 +13,7 @@ import Admin from "./Props/Admin";
 import UserDetails from "./Props/UserDetails";
 import ParentComponent from "./Props/ParentComponent";
 import WithoutSate from "./state/WithoutSate";
+import Counter from "./state/Counter";
 
 const App = () => {
     return (
@@ -30,7 +31,8 @@ const App = () => {
             {/* <Admin /> */}
             {/* <UserDetails /> */}
             {/* <ParentComponent/> */}
-            <WithoutSate/>
+            {/* <WithoutSate/> */}
+            <Counter/>
         </>
 
 
