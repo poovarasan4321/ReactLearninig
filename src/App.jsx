@@ -14,6 +14,10 @@ import UserDetails from "./Props/UserDetails";
 import ParentComponent from "./Props/ParentComponent";
 import WithoutSate from "./state/WithoutSate";
 import Counter from "./state/Counter";
+import ElectionData from "./state/ElectionData";
+import CounterWithClass from "./state/CounterWithClass";
+import CounterWithFunction from "./state/CounterWithFunction";
+import ListRendering1 from "./ListAndKeys/ListRendering1";
 
 const App = () => {
     return (
@@ -32,7 +36,12 @@ const App = () => {
             {/* <UserDetails /> */}
             {/* <ParentComponent/> */}
             {/* <WithoutSate/> */}
-            <Counter/>
+            {/* <Counter/> */}
+            {/* <ElectionData/> */}
+            {/* <CounterWithClass/>
+            <hr />
+            <CounterWithFunction/> */}
+            <ListRendering1/>
         </>
 
 

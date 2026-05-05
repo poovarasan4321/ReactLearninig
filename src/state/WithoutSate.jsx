@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 
 const WithoutSate = () => {
 
-    let count =0;
+    let count = 0;
 
 
     let incrementCount = () => {
-       ++count;
+        ++count;
     };
 
     let decrementCount = () => {
@@ -15,7 +15,7 @@ const WithoutSate = () => {
     };
 
     let restCount = () => {
-       count= 0;
+        count = 0;
 
     }
 
