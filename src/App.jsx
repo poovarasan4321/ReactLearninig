@@ -18,6 +18,18 @@ import ElectionData from "./state/ElectionData";
 import CounterWithClass from "./state/CounterWithClass";
 import CounterWithFunction from "./state/CounterWithFunction";
 import ListRendering1 from "./ListAndKeys/ListRendering1";
+import ListRendering2 from "./ListAndKeys/ListRendering2";
+import ImageTask from "./ListAndKeys/ImageTask";
+import ListTask from "./ListAndKeys/ListTask";
+import InlineEvent from "./EventHandling/InlineEvent";
+import InlineEventFunction from "./EventHandling/InlineEventFunction";
+import ExternalEventHandling from "./EventHandling/ExternalEventHandling";
+import EventWithParameter from "./EventHandling/EventWithParameter";
+import PreventDefault from "./EventHandling/PreventDefault";
+import IfElseRendering from "./ConditionalRendering/IfElseRendering";
+import TernaryOperator from "./ConditionalRendering/TernaryOperator";
+import ThemeSwitcher from "./ConditionalRendering/ThemeSwitcher";
+import ShortCircuitOperator from "./ConditionalRendering/ShortCircuitOperator";
 
 const App = () => {
     return (
@@ -41,7 +53,19 @@ const App = () => {
             {/* <CounterWithClass/>
             <hr />
             <CounterWithFunction/> */}
-            <ListRendering1/>
+            {/* <ListRendering1/> */}
+            {/* <ListRendering2/> */}
+            {/* <ImageTask /> */}
+            {/* <ListTask/> */}
+            {/* <InlineEvent/> */}
+            {/* <InlineEventFunction/> */}
+            {/* <ExternalEventHandling/> */}
+            {/* <EventWithParameter/> */}
+            {/* <PreventDefault/> */}
+            {/* <IfElseRendering/> */}
+            {/* <TernaryOperator/> */}
+            {/* <ThemeSwitcher/> */}
+            <ShortCircuitOperator/>
         </>
 
 
