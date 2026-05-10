@@ -30,6 +30,9 @@ import IfElseRendering from "./ConditionalRendering/IfElseRendering";
 import TernaryOperator from "./ConditionalRendering/TernaryOperator";
 import ThemeSwitcher from "./ConditionalRendering/ThemeSwitcher";
 import ShortCircuitOperator from "./ConditionalRendering/ShortCircuitOperator";
+import Component1 from "./ReactStyling/Component1";
+import Component2 from "./ReactStyling/Component2";
+import InlineStyling from "./ReactStyling/Inlinestyle";
 
 const App = () => {
     return (
@@ -65,7 +68,10 @@ const App = () => {
             {/* <IfElseRendering/> */}
             {/* <TernaryOperator/> */}
             {/* <ThemeSwitcher/> */}
-            <ShortCircuitOperator/>
+            {/* <ShortCircuitOperator/> */}
+            {/* <Component1/> */}
+            {/* <Component2/> */}
+            <InlineStyling/>
         </>
 
 

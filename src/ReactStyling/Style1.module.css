@@ -1,0 +1,15 @@
+.head1{
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    color: red;
+}
+
+.btn1{
+    padding: 20px;
+    border: 0px;
+    background: yellow;
+    color:red;
+    box-shadow: 0px 0px 50px green;
+    margin: 70px;
+}
