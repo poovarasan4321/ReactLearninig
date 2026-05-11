@@ -33,6 +33,9 @@ import ShortCircuitOperator from "./ConditionalRendering/ShortCircuitOperator";
 import Component1 from "./ReactStyling/Component1";
 import Component2 from "./ReactStyling/Component2";
 import InlineStyling from "./ReactStyling/Inlinestyle";
+import Tailwindcss from "./ReactStyling/Tailwindcss";
+import Form1 from "./Formhandling/Form1";
+import Demo1 from "./Demo1";
 
 const App = () => {
     return (
@@ -71,7 +74,10 @@ const App = () => {
             {/* <ShortCircuitOperator/> */}
             {/* <Component1/> */}
             {/* <Component2/> */}
-            <InlineStyling/>
+            {/* <InlineStyling/> */}
+            {/* <Tailwindcss/> */}
+            {/* <Form1/> */}
+            {/* <CounterWithFunction/> */}
         </>
 
 
