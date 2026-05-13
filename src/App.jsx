@@ -35,7 +35,9 @@ import Component2 from "./ReactStyling/Component2";
 import InlineStyling from "./ReactStyling/Inlinestyle";
 import Tailwindcss from "./ReactStyling/Tailwindcss";
 import Form1 from "./Formhandling/Form1";
-import Demo1 from "./Demo1";
+import Form2 from "./Formhandling/Form2";
+import Form3 from "./Formhandling/Form3";
+
 
 const App = () => {
     return (
@@ -78,6 +80,8 @@ const App = () => {
             {/* <Tailwindcss/> */}
             {/* <Form1/> */}
             {/* <CounterWithFunction/> */}
+            {/* <Form2/> */}
+            <Form3/>
         </>
 
 

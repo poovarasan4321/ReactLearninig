@@ -1,44 +1,81 @@
-import React from 'react'
+import { useState } from "react";
+import React from "react";
 
 const Form1 = () => {
 
+    //! state for username
+    const [username, setUsername] = useState("")
+
+    //! state fro password
+    const [password, setPassword] = useState("")
+
+
+    //! handleUsername function
+    let handleUsername = (e) => {
+        let {name,value}=e.target
+        setUsername(value);
+    };
+
+    //! handlePassword function
+    let handlePassword = (e) => {
+        let {name,value}=e.target
+        setPassword(value)
+    }
+    //! handleSubmit function
     let handleSubmit = (e) => {
-        //! handle submit function
         e.preventDefault();
-        console.log("Submit Successfully");
-    }
-
-    //! handleInputChange
-    let handleInputChange=()=>{
-
-    }
+        // console.log({username,password});
+        console.log(username);
+        console.log(password);
+        console.log("Form Submitted Successfully✅");
+        setPassword("")
+        setUsername("")
+    };
 
     return (
-        <div className='w-full h-screen bg-slate-800 text-white flex flex-col justify-center items-center '>
+        <div className="w-full min-h-screen bg-slate-800 text-white flex flex-col items-center justify-center px-4 py-10">
+            <h1 className="text-5xl font-bold p-4 text-center">
+                Form Handling in React
+            </h1>
 
-            <h1 className='text-5xl font-bold p-4 '>Form handling in React</h1>
+            <form
+                onSubmit={handleSubmit}
+                className="bg-white text-black p-8 w-full max-w-md rounded-xl mt-10 shadow-2xl"
+            >
+                <div className="w-full flex flex-col p-2 gap-2 mb-2">
+                    <label htmlFor="" className="text-xl font-semibold text-gray-700">
+                        Username
+                    </label>
+                    <input
+                        type="email"
+                        className="outline-none border border-gray-800 px-3 py-2 rounded-lg w-full"
+                        onChange={handleUsername}
+                        name="username"
+                        value={username}
+                    />
+                </div>
 
-            <form onSubmit={handleSubmit} className='bg-white text-black p-10 w-1/4 rounded-xl scale-120 mt-10' >
+                <div className="w-full flex flex-col p-2 gap-2 mb-4">
+                    <label htmlFor="" className="text-xl font-semibold text-gray-700">
+                        Password
+                    </label>
+                    <input
+                        type="password"
+                        className="outline-none border border-gray-800 px-3 py-2 rounded-lg w-full"
+                        onChange={handlePassword}
+                        name="password"
+                        value={password}
+                    />
+                </div>
 
-                <div>
-                    <div className='w-full flex flex-col p-2 gap-2 mb-2 '>
-                        <label htmlFor="" className='text-xl font-semibold text-gray-700'>UserName</label>
-                        <input type="email" className='outline-none border  border-gray-800 px-1 py-2 rounded-lg' />
-
-                    </div>
-                    <div className='w-full flex flex-col p-2 gap-2 mb-2 '>
-                        <label htmlFor="" className='text-xl font-semibold text-gray-700'>Password</label>
-                        <input type="password" className='outline-none border  border-gray-800 px-1 py-2 rounded-lg' />
-                    </div>
-
-                    <div className='w-full flex justify-center items-center'>
-                        <button  className='  bg-blue-600 text-white font-semibold  px-20 py-2 rounded cursor-pointer text-lg'>Login</button>
-                    </div>
-
+                <div className="w-full flex justify-center items-center">
+                    <button className="bg-blue-600 text-white font-semibold w-full py-2 rounded-lg text-lg cursor-pointer hover:bg-blue-700 duration-200">
+                        Login
+                    </button>
                 </div>
             </form>
         </div>
-    )
-}
+    );
+};
 
-export default Form1
+export default Form1;
