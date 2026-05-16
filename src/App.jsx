@@ -37,6 +37,8 @@ import Tailwindcss from "./ReactStyling/Tailwindcss";
 import Form1 from "./Formhandling/Form1";
 import Form2 from "./Formhandling/Form2";
 import Form3 from "./Formhandling/Form3";
+import CheckBoxInput from "./Formhandling/CheckBoxInput";
+import StudentForm from "./Formhandling/StudentForm";
 
 
 const App = () => {
@@ -81,7 +83,9 @@ const App = () => {
             {/* <Form1/> */}
             {/* <CounterWithFunction/> */}
             {/* <Form2/> */}
-            <Form3/>
+            {/* <Form3/> */}
+            {/* <CheckBoxInput/> */}
+            <StudentForm/>
         </>
 
 
