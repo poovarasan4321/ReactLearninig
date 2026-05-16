@@ -39,6 +39,8 @@ import Form2 from "./Formhandling/Form2";
 import Form3 from "./Formhandling/Form3";
 import CheckBoxInput from "./Formhandling/CheckBoxInput";
 import StudentForm from "./Formhandling/StudentForm";
+import FormUncontrolled from "./Formhandling/UnControlledForm/FormUncontrolled";
+import ToggleAndNotifiy from "./ReactIconsAndNotification/ToggleAndNotifiy";
 
 
 const App = () => {
@@ -85,7 +87,9 @@ const App = () => {
             {/* <Form2/> */}
             {/* <Form3/> */}
             {/* <CheckBoxInput/> */}
-            <StudentForm/>
+            {/* <StudentForm/> */}
+            {/* <FormUncontrolled/> */}
+                <ToggleAndNotifiy/>
         </>
 
 
