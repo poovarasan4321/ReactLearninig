@@ -41,7 +41,9 @@ import CheckBoxInput from "./Formhandling/CheckBoxInput";
 import StudentForm from "./Formhandling/StudentForm";
 import FormUncontrolled from "./Formhandling/UnControlledForm/FormUncontrolled";
 import ToggleAndNotifiy from "./ReactIconsAndNotification/ToggleAndNotifiy";
-
+import ContextApi from "./ContextAPI/ContextApi"
+import ThemeProvider from "./ContextAPI/ThemeProvider";
+import Home from "./ContextAPI/Pages/Home";
 
 const App = () => {
     return (
@@ -89,7 +91,11 @@ const App = () => {
             {/* <CheckBoxInput/> */}
             {/* <StudentForm/> */}
             {/* <FormUncontrolled/> */}
-                <ToggleAndNotifiy/>
+            {/* <ToggleAndNotifiy/> */}
+            {/* <ContextApi/> */}
+            <ThemeProvider>
+                <Home/>
+            </ThemeProvider>
         </>
 
 

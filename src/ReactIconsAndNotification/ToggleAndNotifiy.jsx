@@ -4,6 +4,7 @@ import { CiLock } from "react-icons/ci";
 import toast from 'react-hot-toast';
 import { FaEye } from "react-icons/fa";
 import { FaRegEyeSlash } from "react-icons/fa6";
+import { FaEyeSlash } from "react-icons/fa";
 import { useState } from 'react';
 
 
@@ -12,41 +13,25 @@ const ToggleAndNotifiy = () => {
 
     const [showPassword, setShowPassword] = useState(false);
 
-    // let eye = () => {
-    // setShowPassword(!showPassword)
     let eye = () => {
-
-        let input = document.getElementById("password");
-        let icon = document.getElementById("icon")
-
-        if (input.type === "password") {
-            input.type = "text";
-            // span.value =  <FaRegEyeSlash />
-             icon.innerHTML = "🙈";
-
-        }
-        else {
-            input.type = "password";
-        }
+        setShowPassword(!showPassword)
     }
-
-    // }
 
     let handleSubmit = (e) => {
         e.preventDefault();
-        console.log("sucess");
+        console.log("success");
         toast.success("Form Submitted Successfully")
         // toast.error("SomeThing went wrong")
 
     }
 
     return (
-        <div className='w-full h-screen bg-green-400 flex flex-col justify-center items-center gap-10'>
+        <div className='w-full h-screen bg-yellow-500 flex flex-col justify-center items-center gap-10'>
 
             <h1 className='text-3xl font-semibold font-mono'>Toggle and Notification</h1>
 
             <form action="" onSubmit={handleSubmit}
-                className='  border-1 rounded-xl border-amber-500 rounder-lg bg-blue-500 w-1/4   px-8 py-10 shadow-black flex flex-col gap-5'>
+                className='  border-2 rounded-xl border-amber-500 rounder-lg bg-blue-500 w-1/4   px-8 py-10 shadow-black flex flex-col gap-5'>
 
                 <div
                     className='w-full flex flex-col gap-2 relative'>
@@ -70,14 +55,14 @@ const ToggleAndNotifiy = () => {
                         htmlFor=""
                         className='text-xl p-2 text-white text-bolder '>Password</label>
                     <input
-                        // type={showPassword ? "text" : "password"}
-                        type="text"
+                        //^ with the help of state
+                        type={showPassword ? "text" : "password"}
+                        // type="password"
                         id="password"
                         className='block outline-none py-1 pl-8 px-2 border border-white rounded text-red-950 caret-red-500 w-full' />
                     <span className='text-white text-2xl absolute top-14 left-1'><CiLock /></span>
-                    <span onClick={eye} 
-                    id="icon"
-                    className='absolute text-white right-2 top-15 cursor-pointer '>
+                    <span onClick={eye}
+                        className='absolute text-white right-2 top-15 cursor-pointer '>
                         <FaEye />
                     </span>
 
