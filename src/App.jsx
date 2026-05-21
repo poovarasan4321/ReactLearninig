@@ -44,6 +44,8 @@ import ToggleAndNotifiy from "./ReactIconsAndNotification/ToggleAndNotifiy";
 import ContextApi from "./ContextAPI/ContextApi"
 import ThemeProvider from "./ContextAPI/ThemeProvider";
 import Home from "./ContextAPI/Pages/Home";
+import UseEffect1 from "./UseEffectHook/UseEffect1";
+import UseEffect2 from "./UseEffectHook/UseEffect2";
 
 const App = () => {
     return (
@@ -93,9 +95,11 @@ const App = () => {
             {/* <FormUncontrolled/> */}
             {/* <ToggleAndNotifiy/> */}
             {/* <ContextApi/> */}
-            <ThemeProvider>
+            {/* <ThemeProvider>
                 <Home/>
-            </ThemeProvider>
+            </ThemeProvider> */}
+            {/* <UseEffect1/> */}
+            <UseEffect2/>
         </>
 
 
